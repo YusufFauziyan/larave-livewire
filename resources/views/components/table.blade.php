@@ -65,7 +65,7 @@
                  --}}
 
                 @forelse($items as $item)
-                    <tr wire:key="row-{{ $item->id }} wire:loading.remove
+                    <tr wire:key="row-{{ $item->id }}"
                         class="hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors border-x border-zinc-200 dark:border-zinc-700">
                         @foreach($columns as $field => $label)
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-zinc-900 dark:text-white {{ $columnClasses[$field] ?? '' }}">
